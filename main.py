@@ -200,7 +200,7 @@ class HtmlBookParser(HTMLParser):
 
     def _emit_pending_page_separator(self) -> None:
         if self.pending_page_separator:
-            self._append_line("PAGE_SEPARATOR:")
+            self._append_line("PAGE_SEPARATOR")
             self._append_blank_line()
             self.pending_page_separator = False
 
